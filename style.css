@@ -1,9 +1,10 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif;
     background-image: url('193922073-o-conceito-de-reparação-do-motor-reparação-do-carro-imagem-de-chaves-e-um-cilindro-em-um-fundo.jpg');
     background-size: cover;
     background-position: center center; 
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
+    background-color: #1a1a2e; /* Azul escuro profundo */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,8 +17,8 @@ body {
 
 
 .container {
-    background-color: #1a1a2e; /* Azul escuro profundo */
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #000000;
     padding: 15px;
     padding-bottom: 15px;
     border-radius: 10px;
