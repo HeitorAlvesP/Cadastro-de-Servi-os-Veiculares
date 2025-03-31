@@ -4,77 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de Serviço</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #EAD7B4;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 20px;
-            overflow: hidden;
-        }
-
-        .container {
-            background: #F5E1C6;
-            padding: 15px;
-            padding-bottom: 15px;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-            width: 90%;
-            max-width: 600px;
-            font-size: 15px;
-            height: auto;
-            min-height: 300px;
-            max-height: 90vh;
-            overflow: hidden;
-        }
-        label {
-            font-weight: bold;
-            display: block;
-            margin-bottom: 8px;
-        }
-        input[type="text"], input[type="password"], select, textarea {
-            width: calc(100% - 20px);
-            padding: 12px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 18px;
-            margin-right: 20px;
-        }
-        .checkbox-group, .radio-group {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            margin-bottom: 15px;
-            font-size: 18px;
-        }
-        textarea {
-            height: 100px;
-            resize: none;
-        }
-        .button-group {
-            display: flex;
-            justify-content: space-between;
-        }
-        button {
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            padding: 15px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 18px;
-        }
-        button:hover {
-            opacity: 0.8;
-        }
-        .cancel {
-            background-color: #0056b3;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEJr+R7uV0TtG4pC7Y6lxXWZr5V6dUR5OAf3cV2pZKlV+P0dcozscn6cDoHqF" crossorigin="anonymous">
 </head>
 <body>
     <div class="container">
@@ -113,9 +44,14 @@
         <textarea placeholder="Digite observações sobre o veículo..."></textarea>
         
         <div class="button-group">
-            <button>Agendar Serviço</button>
-            <button class="cancel">Cancelar Serviço</button>
+            <button class="btn btn-primary">
+                <i class="bi bi-check-circle"></i> Confirmação
+            </button>
+            <button class="btn btn-danger">
+                <i class="bi bi-x-circle"></i> Cancelar
+            </button>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0pP7y5yFw8P4wD1y3K0ZL3JSVp5uUj2l9HqTih44I2qUq9Hg" crossorigin="anonymous"></script>
 </body>
 </html>
