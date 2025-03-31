@@ -10,45 +10,55 @@
 </head>
 <body>
     <div class="container">
-        <label>Nome do Cliente:</label>
-        <input type="text" placeholder="Digite seu nome...">
+        <label class="form-label fw-bold">Nome do Cliente:</label>
+        <input type="text" placeholder="Digite seu nome">
         
-        <label>Senha do Cliente:</label>
-        <input type="password" placeholder="Digite sua senha...">
+        <label class="form-label fw-bold">Senha do Cliente:</label>
+        <input type="password" class="form-control" id="senha" placeholder="Digite sua senha">
         
-        <label>Serviços Desejados:</label>
-        <div class="checkbox-group">
-            <input type="checkbox" id="troca-oleo" checked>
-            <label for="troca-oleo">Troca de Óleo</label>
-            <input type="checkbox" id="alinhamento">
-            <label for="alinhamento">Alinhamento</label>
-            <input type="checkbox" id="balanceamento">
-            <label for="balanceamento">Balanceamento</label>
-            <input type="checkbox" id="revisao">
-            <label for="revisao">Revisão Geral</label>
+        <div class="mb-3">
+            <label class="form-label fw-bold">Serviços Desejados:</label>
+            <div class="d-flex flex-wrap gap-3">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="troca-oleo" checked>
+                    <label class="form-check-label" for="troca-oleo">Troca de Óleo</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="alinhamento">
+                    <label class="form-check-label" for="alinhamento">Alinhamento</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="balanceamento">
+                    <label class="form-check-label" for="balanceamento">Balanceamento</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="revisao">
+                    <label class="form-check-label" for="revisao">Revisão Geral</label>
+                </div>
+            </div>
         </div>
-        
-        <label>Tipo de Veículo:</label>
+
+        <label class="form-label fw-bold">Tipo de Veículo:</label>
         <div class="radio-group">
-            <input type="radio" id="carro" name="tipo-veiculo" checked>
-            <label for="carro">Carro</label>
-            <input type="radio" id="moto" name="tipo-veiculo">
-            <label for="moto">Moto</label>
+            <input class="form-check-input" type="radio" id="carro" name="tipo-veiculo" checked>
+            <label class="form-check-label" for="carro">Carro</label>
+            <input class="form-check-input" type="radio" id="moto" name="tipo-veiculo">
+            <label class="form-check-label"for="moto">Moto</label>
         </div>
         
-        <label>Modelo do Veículo:</label>
+        <label class="form-label fw-bold">Modelo do Veículo:</label>
         <select>
             <option>Modelo 2</option>
         </select>
         
-        <label>Observações:</label>
+        <label class="form-label fw-bold">Observações:</label>
         <textarea placeholder="Digite observações sobre o veículo..."></textarea>
         
         <div class="button-group">
             <button class="btn btn-danger">
                 <i class="bi bi-x-circle"></i> Cancelar
             </button>
-            <button class="btn btn-primary">
+            <button class="btn btn-primary" id="confirmar">
                 <i class="bi bi-check-circle"></i> Confirmação
             </button>
         </div>
