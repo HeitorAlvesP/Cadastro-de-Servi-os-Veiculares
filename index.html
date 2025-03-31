@@ -10,58 +10,60 @@
 </head>
 <body>
     <div class="container">
-        <label class="form-label fw-bold">Nome do Cliente:</label>
-        <input type="text" placeholder="Digite seu nome">
-        
-        <label class="form-label fw-bold">Senha do Cliente:</label>
-        <input type="password" class="form-control" id="senha" placeholder="Digite sua senha">
-        
-        <div class="mb-3">
-            <label class="form-label fw-bold">Serviços Desejados:</label>
-            <div class="d-flex flex-wrap gap-3">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="troca-oleo" checked>
-                    <label class="form-check-label" for="troca-oleo">Troca de Óleo</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="alinhamento">
-                    <label class="form-check-label" for="alinhamento">Alinhamento</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="balanceamento">
-                    <label class="form-check-label" for="balanceamento">Balanceamento</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="revisao">
-                    <label class="form-check-label" for="revisao">Revisão Geral</label>
+        <form id="formAgendamento">
+            <label class="form-label fw-bold">Nome do Cliente:</label>
+            <input type="text" placeholder="Digite seu nome">
+            
+            <label class="form-label fw-bold">Senha do Cliente:</label>
+            <input type="password" class="form-control" id="senha" placeholder="Digite sua senha">
+            
+            <div class="mb-3">
+                <label class="form-label fw-bold">Serviços Desejados:</label>
+                <div class="d-flex flex-wrap gap-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="troca-oleo">
+                        <label class="form-check-label" for="troca-oleo">Troca de Óleo</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="alinhamento">
+                        <label class="form-check-label" for="alinhamento">Alinhamento</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="balanceamento">
+                        <label class="form-check-label" for="balanceamento">Balanceamento</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="revisao">
+                        <label class="form-check-label" for="revisao">Revisão Geral</label>
+                    </div>
                 </div>
             </div>
-        </div>
+        
+            <label class="form-label fw-bold">Tipo de Veículo:</label>
+            <div class="radio-group">
+                <input class="form-check-input" type="radio" id="carro" name="tipo-veiculo">
+                <label class="form-check-label" for="carro">Carro</label>
+                <input class="form-check-input" type="radio" id="moto" name="tipo-veiculo">
+                <label class="form-check-label"for="moto">Moto</label>
+            </div>
 
-        <label class="form-label fw-bold">Tipo de Veículo:</label>
-        <div class="radio-group">
-            <input class="form-check-input" type="radio" id="carro" name="tipo-veiculo" checked>
-            <label class="form-check-label" for="carro">Carro</label>
-            <input class="form-check-input" type="radio" id="moto" name="tipo-veiculo">
-            <label class="form-check-label"for="moto">Moto</label>
-        </div>
-        
-        <label class="form-label fw-bold">Modelo do Veículo:</label>
-        <select>
-            <option>Modelo 2</option>
-        </select>
-        
-        <label class="form-label fw-bold">Observações:</label>
-        <textarea placeholder="Digite observações sobre o veículo..."></textarea>
-        
-        <div class="button-group">
-            <button class="btn btn-danger" id="cancelar">
-                <i class="bi bi-x-circle"></i> Cancelar
-            </button>
-            <button class="btn btn-primary" id="confirmar">
-                <i class="bi bi-check-circle"></i> Agendar
-            </button>
-        </div>
+            <label class="form-label fw-bold">Modelo do Veículo:</label>
+            <select>
+                <option>Modelo 2</option>
+            </select>
+
+            <label class="form-label fw-bold">Observações:</label>
+            <textarea placeholder="Digite observações sobre o veículo..."></textarea>
+
+            <div class="button-group">
+                <button type="button" class="btn btn-danger" id="cancelar">
+                    <i class="bi bi-x-circle"></i> Cancelar
+                </button>
+                <button type="button" class="btn btn-primary" id="confirmar">
+                    <i class="bi bi-check-circle"></i> Agendar
+                </button>
+            </div>
+        </form>
     </div>
     <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
