@@ -12,28 +12,28 @@
     <div class="container">
         <form id="formAgendamento">
             <label class="form-label fw-bold">Nome do Cliente:</label>
-            <input type="text" placeholder="Digite seu nome">
-            
+            <input type="text" id="nome" class="form-control" placeholder="Digite seu nome">
+        
             <label class="form-label fw-bold">Senha do Cliente:</label>
-            <input type="password" class="form-control" id="senha" placeholder="Digite sua senha">
-            
+            <input type="password" id="senha" class="form-control" placeholder="Digite sua senha">
+        
             <div class="mb-3">
                 <label class="form-label fw-bold">Serviços Desejados:</label>
                 <div class="d-flex flex-wrap gap-3">
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="troca-oleo">
+                        <input class="form-check-input" type="checkbox" name="servico" id="troca-oleo">
                         <label class="form-check-label" for="troca-oleo">Troca de Óleo</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="alinhamento">
+                        <input class="form-check-input" type="checkbox" name="servico" id="alinhamento">
                         <label class="form-check-label" for="alinhamento">Alinhamento</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="balanceamento">
+                        <input class="form-check-input" type="checkbox" name="servico" id="balanceamento">
                         <label class="form-check-label" for="balanceamento">Balanceamento</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="revisao">
+                        <input class="form-check-input" type="checkbox" name="servico" id="revisao">
                         <label class="form-check-label" for="revisao">Revisão Geral</label>
                     </div>
                 </div>
@@ -44,18 +44,21 @@
                 <input class="form-check-input" type="radio" id="carro" name="tipo-veiculo">
                 <label class="form-check-label" for="carro">Carro</label>
                 <input class="form-check-input" type="radio" id="moto" name="tipo-veiculo">
-                <label class="form-check-label"for="moto">Moto</label>
+                <label class="form-check-label" for="moto">Moto</label>
             </div>
-
+        
             <label class="form-label fw-bold">Modelo do Veículo:</label>
-            <select>
-                <option>Modelo 2</option>
+            <select id="modelo" class="form-control">
+                <option value="">Selecione o modelo</option>
+                <option value="modelo2">Modelo 1</option>
+                <option value="modelo2">Modelo 2</option>
+                <option value="modelo2">Modelo 3</option>
             </select>
-
+        
             <label class="form-label fw-bold">Observações:</label>
-            <textarea placeholder="Digite observações sobre o veículo..."></textarea>
-
-            <div class="button-group">
+            <textarea id="observacoes" class="form-control" placeholder="Digite observações sobre o veículo..."></textarea>
+        
+            <div class="button-group mt-3">
                 <button type="button" class="btn btn-danger" id="cancelar">
                     <i class="bi bi-x-circle"></i> Cancelar
                 </button>
